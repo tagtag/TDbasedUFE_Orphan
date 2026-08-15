@@ -79,6 +79,9 @@ run_all.sh
 
 The metadata builder itself needs `GEOquery`, `Biobase`, `jsonlite`, `readxl`
 and `xml2`.  `BayesFactor` is used by the PASI analysis.
+## 0. Build kallisto index
+
+Prior to the following process, kallisto index must be build. See reference_build sub directory
 
 ## 1. Public metadata, exact FASTQs, disease/normal labels and patient pairing
 
