@@ -79,9 +79,7 @@ run_all.sh
 
 The metadata builder itself needs `GEOquery`, `Biobase`, `jsonlite`, `readxl`
 and `xml2`.  `BayesFactor` is used by the PASI analysis.
-## 0. Build kallisto index
 
-Prior to the following process, kallisto index must be build. See reference_build sub directory
 
 ## 1. Public metadata, exact FASTQs, disease/normal labels and patient pairing
 
@@ -214,6 +212,10 @@ Rscript scripts/03_extract_orphan_ids.R \
 
 Orphan transcript/locus identifiers retain the `ORPHAN_` prefix, e.g.
 `ORPHAN_hsa_00255579` and `ORPHAN_XLOC_022250`.
+
+## 2b. Build kallisto index
+
+Prior to the following process, kallisto index must be build. See reference_build sub directory
 
 ## 3. Download the exact FASTQs and run kallisto
 
