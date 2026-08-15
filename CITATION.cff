@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the associated manuscript and the Ruiz-Orera et al. de novo gene annotation."
+title: "Disease-context-dependent directional dysregulation in human orphan genes: analysis code"
+type: software
+authors:
+  - family-names: "Taguchi"
+    given-names: "Y-h."
+year: 2026
+license: MIT

@@ -1,0 +1,24 @@
+# raw and intermediate data
+data/
+*.fastq
+*.fastq.gz
+*.idx
+*.fa
+*.fa.fai
+*.gtf
+*.gtf.gz
+
+# generated output
+results/*
+!results/.gitkeep
+figures/*
+!figures/.gitkeep
+
+# R
+.Rhistory
+.RData
+.Rproj.user/
+*.Rproj
+
+# Generated GEO metadata/cache
+metadata_output/

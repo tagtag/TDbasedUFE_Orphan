@@ -1,0 +1,15 @@
+manuscript_item	script	output	note
+Public GEO/ENA selection	scripts/00_build_geo_patient_metadata.R	metadata/sra_runs.csv	exact run + FASTQ URL + MD5 selection from public metadata
+Matched disease/normal pairs	scripts/00_build_geo_patient_metadata.R	metadata/sample_sheet_GSE*.csv	cohort-specific public title/metadata rules
+Clinical metadata	scripts/00_build_geo_patient_metadata.R	metadata_output/GEO_patient_metadata_combined.tsv	GEO plus published GSE127165 Table S1 age
+FASTQ/run audit	scripts/00_build_geo_patient_metadata.R	metadata_output/GEO_SRA_run_mapping.tsv; metadata_output/FASTQ_selection_audit.tsv	full accession/provenance audit
+Kallisto quantification	scripts/02_run_kallisto.sh	data/kallisto/<cohort>_<run>/abundance.tsv	uses exact ENA URLs in sra_runs.csv
+Gene-locus abundance creation	scripts/04_aggregate_gene_level.R	abundance.tsv/csv -> abundance_gene.tsv/csv	combined-GTF gene_id mapping
+Table 1	R/01_table1_relative_expression.R	results/table1.csv	library-level lower-relative-expression analysis
+Table 2	R/02_patient_level_analysis.R	results/table2.csv	standardized expression
+Table 3	R/02_patient_level_analysis.R	results/table3.csv	gene-locus sensitivity analysis
+Table 4	R/02_patient_level_analysis.R	results/table4.csv	rank-based analysis
+Table 5	R/03_table5_control_sets.R	results/table5.csv	expression-matched controls, 20 replicates
+Clinical/Table 7	R/04_clinical_association.R	results/table7_pasi_correlation.csv + clinical_lm_GSE*.txt	combined clinical TSV only
+Figure 2	R/05_figure2.R	figures/figure2.pdf	patient signed shift + classifications
+Session info	R/06_session_info.R	results/sessionInfo.txt	software provenance
