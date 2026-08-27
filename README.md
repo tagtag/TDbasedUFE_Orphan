@@ -1,7 +1,7 @@
 # Disease-context-dependent directional dysregulation in human orphan genes
 Y.-H. Taguchi  *,Turki Turki
 
-https://www.preprints.org/manuscript/202608.1930
+ttps://doi.org/10.20944/preprints202608.1930.v1
 
 Reproducible code for the patient-level analysis of human orphan-gene expression
 in four paired RNA-seq cohorts.
