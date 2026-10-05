@@ -1,7 +1,6 @@
 # TDbasedUFE_Orphan
 
-Analysis code for *Orphan gene transcripts are systematically depleted in disease
-tissue relative to expression- and detection-frequency-matched controls*
+Analysis code for *Reduced Detection of Human Orphan Gene Transcripts in Disease Tissue Relative to Expression- and Detection-Matched Controls*, https://doi.org/10.20944/preprints202608.1930.v2
 (revision of Preprints 202608.1930.v1).
 
 Everything from the transcript-level `abundance.tsv` files onward is here, together
