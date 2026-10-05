@@ -1,7 +1,7 @@
 # TDbasedUFE_Orphan
 
 Analysis code for *Reduced Detection of Human Orphan Gene Transcripts in Disease Tissue Relative to Expression- and Detection-Matched Controls*, https://doi.org/10.20944/preprints202608.1930.v2
-(revision of Preprints 202608.1930.v1).
+(revision of Preprints 202608.1930.v1, https://doi.org/10.20944/preprints202608.1930.v1).
 
 Everything from the transcript-level `abundance.tsv` files onward is here, together
 with the scripts that build the reference and reconstruct the run selection from
